@@ -8,7 +8,7 @@ body {
 
   /* св-ва на уровне контенера */
   /* 3 колонки, 200px 500px 50px */
-  grid-template-columns: 200px 500px 50px;
+  grid-template-columns: repeat(3, 300px);
 
   /* для рядов мы работаем с высотой */ 
   /* если не задавать остальные */
