@@ -6,11 +6,19 @@ body {
   display: grid;
   gap: 0.65rem 0.8rem;
 
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: 
-  'header header header'
-  'sidebar article article'
-  'sidebar footer footer';
+  /* grid-template-columns: repeat(4, 1fr); */
+
+  /* . используется, чтобы задать пустое пространство */
+  /* grid-template-areas: 
+  'header header header header'
+  'article article . sidebar'
+  'footer footer footer footer'; */
+
+  /* есть более упрощенная схема, reapet не работает */
+  grid-template: 
+  'header header header header' 50px
+  'article article . sidebar' auto
+  'footer footer footer footer' 50px / 1fr 1fr 1fr 1fr;
 }
 
 .container > * {
