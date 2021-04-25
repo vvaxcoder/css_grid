@@ -9,8 +9,8 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: 
   'header header header'
-  'article article sidebar'
-  'footer footer footer';
+  'sidebar article article'
+  'sidebar footer footer';
 }
 
 .container > * {
