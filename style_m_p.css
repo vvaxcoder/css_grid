@@ -23,6 +23,8 @@ body {
   border-radius: 0.65rem;
 }
 
+/* сколько ячейка будет занимать места */
 .item:nth-child(3) {
   order: -1;
+  grid-column: 2 / span 2;
 }
