@@ -14,7 +14,8 @@ body {
   /* justify-items: start; */
   /* start | end | center | stretch */
   /* align-items: start; */
-  place-items: end start;
+  /* place-items: end start; */
+  place-content: center space-evenly;
 }
 
 .container > * {
@@ -24,21 +25,18 @@ body {
 }
 
 header {
-  grid-area: header;
   background-color: #006400;
 }
 
 article {
-  grid-area: article;
   background-color: #000;
 }
 
 aside {
-  grid-area: sidebar;
+  place-self: start end;
   background-color: #800000;
 }
 
 footer {
-  grid-area: footer;
   background-color: #00008b;
 }
