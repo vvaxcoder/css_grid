@@ -5,20 +5,16 @@ body {
 .container {
   display: grid;
   gap: 0.65rem 0.8rem;
-
-  /* grid-template-columns: repeat(4, 1fr); */
-
-  /* . используется, чтобы задать пустое пространство */
-  /* grid-template-areas: 
-  'header header header header'
-  'article article . sidebar'
-  'footer footer footer footer'; */
+  width: 700px;
+  border: 1px solid #222;
 
   /* есть более упрощенная схема, reapet не работает */
-  grid-template: 
-  'header header header header' 50px
-  'article article . sidebar' auto
-  'footer footer footer footer' 50px / 1fr 1fr 1fr 1fr;
+  grid-template: 500px 300px / 100px 350px 100px;
+  /* start | end | center | stretch */
+  /* justify-items: start; */
+  /* start | end | center | stretch */
+  /* align-items: start; */
+  place-items: end start;
 }
 
 .container > * {
