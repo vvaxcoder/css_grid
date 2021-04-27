@@ -4,39 +4,20 @@ body {
 
 .container {
   display: grid;
-  gap: 0.65rem 0.8rem;
-  width: 700px;
-  border: 1px solid #222;
+  gap: 0.8rem 1rem;
+  grid-template-columns: 200px 1fr minmax(300px, 1fr);
+  grid-template-rows: 100px 200px;
+  /* grid-auto-rows: 150px; */
+  grid-auto-rows: minmax(100px, 1fr);
 
-  /* есть более упрощенная схема, reapet не работает */
-  grid-template: 500px 300px / 100px 350px 100px;
-  /* start | end | center | stretch */
-  /* justify-items: start; */
-  /* start | end | center | stretch */
-  /* align-items: start; */
-  /* place-items: end start; */
-  place-content: center space-evenly;
-}
-
-.container > * {
   padding: 1rem;
 
-  border-radius: 0.65rem;
+  background-color: #ccc;
 }
 
-header {
-  background-color: #006400;
-}
+.item {
+  padding: 1rem;
 
-article {
-  background-color: #000;
-}
-
-aside {
-  place-self: start end;
-  background-color: #800000;
-}
-
-footer {
-  background-color: #00008b;
+  background-color: #cd853f;
+  border-radius: 15px;
 }
