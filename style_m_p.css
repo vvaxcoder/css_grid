@@ -7,7 +7,7 @@ body {
 
   display: grid;
   gap: 0.8rem 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-template-rows: minmax(100px, auto) 100px 200px;
 
   background-color: #ccc;
